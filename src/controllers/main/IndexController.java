@@ -70,7 +70,6 @@ public class IndexController {
     @RequestMapping(value = "/edit")
     public String edit(Model model) {
         setTitle(model, "Hello, Spring - 글 작성하기");
-        model.addAttribute("lastList", test("번째 거래 게시판 제목", "번째 거래 게시판 내용"));
-        return "index";
+        return "edit";
     }
 }
